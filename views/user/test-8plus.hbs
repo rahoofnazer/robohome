@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BootstrapDash Wizard</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bd-wizard.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+</head>
+
+<body>
+    <main class="py-5" style="background: linear-gradient(
+45deg
+, rgb(79, 0, 246) 0%, rgb(176, 0, 247) 100%);">
+        <div class="container">
+            <form id="wizard">
+
+                {{!-- Question 1 --}}
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>1</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class="">
+                            <div class="col-lg-7 px-0 pt-4">
+                                <img src="../images/ore/qstz/1.png" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                       How many triangles are there in the picture?
+
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="11-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="11-option" name="q1" value="10" tabindex="1">
+                                                <span style="font-size: 1.3rem;">12</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="12-option" class="l-radio">
+                                            <input type="radio" id="12-option" name="q1" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;">14</span>
+                                        </label>
+                                        <br>
+
+                                        <label for="13-option" class="l-radio">
+                                            <input type="radio" id="13-option" name="q1" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">10</span>
+                                        </label>
+                                        <br>
+                                        <label for="14-option" class="l-radio">
+                                            <input type="radio" id="14-option" name="q1" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">8</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+                {{!-- Question 2 --}}
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>2</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class="pt-5">
+                           
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                        Who is the present president of America?
+
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="21-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="21-option" name="q2" value="10" tabindex="1">
+                                                <span style="font-size: 1.3rem;">Joe Biden</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="22-option" class="l-radio">
+                                            <input type="radio" id="22-option" name="q2" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;">Donald Trump</span>
+                                        </label>
+                                        <br>
+                                        <label for="23-option" class="l-radio">
+                                            <input type="radio" id="23-option" name="q2" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">Kamala Harris</span>
+                                        </label>
+                                        <br>
+                                        <label for="24-option" class="l-radio">
+                                            <input type="radio" id="24-option" name="q2" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">Barack Obama</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+                {{!-- Question 3 --}}
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>3</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class="pt-2">
+                            <div class="col-lg-7 px-0 pt-4">
+                                <img src="../images/ore/qstz/3.png" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                       What comes next?
+
+                                    </div>
+                                    </h4>
+
+
+                                     <div class="col-lg-12">
+                      <div class="row">
+
+                        <div class="col-lg-6 col-sm-6">
+                          <label for="551-option">
+                            <input type="radio" id="551-option" name="q3" value="" hidden>
+                            <img src="../images/ore/qstz/3.1.png" style="border:groove; height: 100%; width: 150px;">
+                          </label>
+                        </div>
+
+
+                        <div class="col-lg-6 col-sm-6">
+                          <label for="552-option">
+                            <input type="radio" id="552-option" name="q3" value="10" hidden>
+                            <img src="../images/ore/qstz/3.2.png" style="border:groove; height: 100%; width: 150px;">
+                          </label>
+                        </div>
+
+
+                        <div class="col-lg-6 col-sm-6">
+                          <label for="553-option">
+                            <input type="radio" id="553-option" name="q3" value="" hidden>
+                            <img src="../images/ore/qstz/3.3.png" style="border:groove; height: 100%; width: 150px;">
+                          </label>
+                        </div>
+
+                         <div class="col-lg-6 col-sm-6">
+                          <label for="554-option">
+                            <input type="radio" id="554-option" name="q3" value="" hidden>
+                            <img src="../images/ore/qstz/3.4.png" style="border:groove; height: 100%; width: 150px;">
+                          </label>
+                        </div>
+
+
+                      </div>
+                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+                {{!-- Question 4 --}}
+
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>4</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class="pt-5">
+                           
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                        Which among the following is 'donner blood group'?
+
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="41-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="41-option" name="q4" value="10" tabindex="1">
+                                                <span style="font-size: 1.3rem;">O</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="42-option" class="l-radio">
+                                            <input type="radio" id="42-option" name="q4" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;">AB</span>
+                                        </label>
+                                        <br>
+                                        <label for="43-option" class="l-radio">
+                                            <input type="radio" id="43-option" name="q4" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">B</span>
+                                        </label>
+                                        <br>
+                                        <label for="44-option" class="l-radio">
+                                            <input type="radio" id="44-option" name="q4" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">None of these</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+                {{!-- Question 5 --}}
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>5</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class="">
+                            <div class="col-lg-7 px-0 pt-4">
+                                <img src="../images/ore/qstz/5.png" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-7">
+                                
+
+
+                                    <div>
+
+                                        <label for="51-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="51-option" name="q5" value="" tabindex="1">
+                                                <span style="font-size: 1.3rem;">10</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="52-option" class="l-radio">
+                                            <input type="radio" id="52-option" name="q5" value="10" tabindex="2">
+                                            <span style="font-size: 1.3rem;"> 9</span>
+                                        </label>
+                                        <br>
+                                        <label for="53-option" class="l-radio">
+                                            <input type="radio" id="53-option" name="q5" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">7</span>
+                                        </label>
+                                        <br>
+                                        <label for="54-option" class="l-radio">
+                                            <input type="radio" id="54-option" name="q5" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">8</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                {{!-- Question 6 --}}
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>6</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper pt-3">
+                        <div class="" style="padding-top: 5rem; padding-bottom: 4rem;">
+                           
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                        Macmohan Line demarcates the boundary between which countries?
+
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="65-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="65-option" name="q6" value="" tabindex="1">
+                                                <span style="font-size: 1.3rem;">USA and Canda</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="66-option" class="l-radio">
+                                            <input type="radio" id="66-option" name="q6" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;"> Nepal and India</span>
+                                        </label>
+                                        <br>
+                                        <label for="67-option" class="l-radio">
+                                            <input type="radio" id="67-option" name="q6" value="10" tabindex="3">
+                                            <span style="font-size: 1.3rem;">India and China</span>
+                                        </label>
+                                        <br>
+                                        <label for="68-option" class="l-radio">
+                                            <input type="radio" id="68-option" name="q6" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">India and Myanmar</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                {{!-- Question 7 --}}
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>7</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class=""  style="padding-top: 5rem; padding-bottom: 4rem;">
+                           
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                        If the circle with centre O has area 9π, What is the area of the equilateral triangle ABC?
+
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="71-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="71-option" name="q7" value="" tabindex="1">
+                                                <span style="font-size: 1.3rem;">10√3</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="72-option" class="l-radio">
+                                            <input type="radio" id="72-option" name="q7" value="10" tabindex="2">
+                                            <span style="font-size: 1.3rem;"> 12√3</span>
+                                        </label>
+                                        <br>
+                                        <label for="73-option" class="l-radio">
+                                            <input type="radio" id="73-option" name="q7" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">15√3</span>
+                                        </label>
+                                        <br>
+                                        <label for="74-option" class="l-radio">
+                                            <input type="radio" id="74-option" name="q7" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">6√3</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                {{!-- Question 8 --}}
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>8</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class=""  style="padding-top: 5rem; padding-bottom: 4rem;">
+                           
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                        Assume each day has exactly 24 hours. Then 10! Seconds is equal to?
+
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="81-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="81-option" name="q8" value="" tabindex="1">
+                                                <span style="font-size: 1.3rem;">40 days</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="82-option" class="l-radio">
+                                            <input type="radio" id="82-option" name="q8" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;"> 30 days</span>
+                                        </label>
+                                        <br>
+                                        <label for="83-option" class="l-radio">
+                                            <input type="radio" id="83-option" name="q8" value="10" tabindex="3">
+                                            <span style="font-size: 1.3rem;">6 weeks</span>
+                                        </label>
+                                        <br>
+                                        <label for="84-option" class="l-radio">
+                                            <input type="radio" id="84-option" name="q8" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">5 weeks</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {{!-- Question 9 --}}
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>9</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class="">
+                            <div class="col-lg-7 pt-4">
+                                <img src="../images/ore/qsty/9.png" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                        Water gas is a mixture of
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="91-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="91-option" name="q9" value="10" tabindex="1">
+                                                <span style="font-size: 1.3rem;">CO and H2</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="92-option" class="l-radio">
+                                            <input type="radio" id="92-option" name="q9" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;">NH4 and H5</span>
+                                        </label>
+                                        <br>
+                                        <label for="93-option" class="l-radio">
+                                            <input type="radio" id="93-option" name="q9" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">CH4 and H2</span>
+                                        </label>
+                                        <br>
+                                        <label for="94-option" class="l-radio">
+                                            <input type="radio" id="94-option" name="q9" value="" tabindex="3">
+                                            <span style="font-size: 1.3rem;">CO2 and H2</span>
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {{!-- Question 10 --}}
+
+
+                <h3>
+                    <div class="media">
+                        <div class="bd-wizard-step-icon"><i><b>10</b></i></div>
+
+                    </div>
+                </h3>
+                <section>
+                    <div class="content-wrapper">
+                        <div class="">
+                            <div class="col-lg-7 px-0 pt-4">
+                                <img src="../images/ore/qstz/10.png" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-7">
+                                <h5 class="section-heading my-3">
+                                    <div class="badge-pill badge-danger" style="border-radius: 0.2rem !important">
+
+                                        The blue box is heavier than the red one.
+Two red boxes weigh the same as the blue
+and green boxes combined.
+Arrange the boxes from lightest to heaviest.
+
+                                    </div>
+                                    </h4>
+
+
+                                    <div>
+
+                                        <label for="100-option" class="l-radio">
+                                            <div style="border-radius: 25px; " class="pr-5">
+                                                <input type="radio" id="100-option" name="q10" value="10" tabindex="1">
+                                                <span style="font-size: 1.3rem;">Green Red Blue</span>
+                                            </div>
+                                        </label>
+
+                                        <br>
+                                        <label for="101-option" class="l-radio">
+                                            <input type="radio" id="101-option" name="q10" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;"> Red blue green</span>
+                                        </label>
+
+                                        <br>
+                                        <label for="102-option" class="l-radio">
+                                            <input type="radio" id="102-option" name="q10" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;"> Red green blue</span>
+                                        </label>
+
+                                        <br>
+                                        <label for="103-option" class="l-radio">
+                                            <input type="radio" id="103-option" name="q10" value="" tabindex="2">
+                                            <span style="font-size: 1.3rem;"> Blue red green</span>
+                                        </label>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+            </form>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.steps.min.js"></script>
+    <script src="../assets/js/bd-wizard.js"></script>
+
+
+</body>
+</html>         

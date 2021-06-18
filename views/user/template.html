@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <style>
+      body{
+        font-family: 'Montserrat';
+              }
+
+      .container {
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 198px;
+  left: 270px;
+}
+
+.name-text {
+  position: absolute;
+  top: 402px;
+  left: 142px;
+}
+
+.boxdiv{
+  position: absolute;
+  top: 405px;
+  left: 0px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="">
+    <img style="width: 600px; height: 842px;" src="http://robohome.co.in/images/ore/certificate.jpg" alt="">
+
+    <div class="centered" style="
+     top: 198px;
+    left: 251px;
+    height: 18px;
+    width: 101px;
+    text-align: center;">
+      
+      <h2 style="color: rgb(0, 0, 0);font-weight: lighter; font-size: 17px; ">
+      
+      {{this.user.uniqueid}} 
+
+    </h2>
+  </div>
+
+    <div class="boxdiv px-auto" style="height: 50px; width: 600px; text-align: center;">
+      <div class="px-auto">
+        <h2 class="px-auto" style="color: black; font-family: 'Montserrat'; font-size: 3rem; font-weight: 650;">
+          {{this.user.name}}
+        </h2>
+      </div>
+    </div>
+    
+    <div style="    position: absolute;
+    
+    height: 19px;
+    width: 72px;
+    top: 522px;
+    left: 351px;">
+            <P style="    FONT-SIZE: 13px;
+            font-family: 'Montserrat';
+            font-weight: 700;">{{this.user.date}} </P>
+    </div>
+
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <form onsubmit="event.preventDefault();">
+            <input type="text" value='question' id="question" name="description" placeholder="question">
+            <br>
+
+            <input type="radio" id="altrntv" value='1' name="alternatives">
+            <input value="option 1"  id="option-0" type="text" name="options">
+            <br>
+
+            <input type="radio" id="altrntv" value='2' name="alternatives">
+            <input value="option 2" id="option-1" type="text" name="options">
+            <br>
+
+            <input type="radio" id="altrntv" value='3' name="alternatives">
+            <input value="option 3" id="option-2" type="text" name="options">
+            <br>
+
+            <input type="radio" id="altrntv" value='4' name="alternatives">
+            <input value="option 4" id="option-3" type="text" name="options">
+            <br>
+
+            <input type="radio" id="altrntv" value='5' name="alternatives">
+            <input value="option 5" id="option-4" type="text" name="options">
+            <br>
+
+            <br>
+            <button onclick="SubmitForm()">submit</button>
+
+        </form>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table id='questionTable'>
+        <thead>
+            <th>No.</th>
+            <th>question</th>
+            <th>link</th>
+            <th>id</th>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script>
+
+        /*$(document).ready(function () {
+            $('form').submit(function (e) {
+                e.preventDefault()
+                const question = document.getElementById("question").value
+                const answer = document.getElementById('altrntv').value
+                let options = []
+                for (int i, i < 5, i++) {
+                    let option = document.getElementById('option-' + i + 1).value
+                    console.log(option)
+                }
+                alert("question:" + question + "asnwer:" + answer)
+            });
+        });*/
+        const SubmitForm = () => {
+            const question = document.getElementById("question").value
+            const answer = document.getElementsByName('alternatives')
+            let alternatives = []
+            
+            for (var i=0; i <5; i++) {
+                let option = document.getElementById('option-' +i).value
+                let isAnswer = answer[i].checked
+                let value = isAnswer ? {text:option, isCorrect:isAnswer} : {text:option}
+                alternatives.push(value)
+                
+            }
+
+            let obj =JSON.stringify({
+                    description:question,
+                    alternatives
+                })
+                console.log({
+                    description:question,
+                    alternatives:alternatives
+                })
+            $.ajax({
+                url:'/questions',
+                data:{obj},
+                method:'POST'
+            }).then((res)=>{
+                console.log(res)
+            })
+        
+        }
+    </script>
+
+    <script>
+
+
+        $.ajax({
+        method:'GET',
+        url:'/allquestions'
+        }).then((data)=>{
+        console.log(data)
+        data.map((question, index)=>{
+            $("#questionTable tbody").append("<tr>" + 
+        "<td>"+index+"</td>" +
+        "<td>"+question.description+"</td>" +
+        "<td><a href='/questions/"+question._id+"'>click here</a></td>" +
+        "<td>"+question._id+"</td>" +
+        "</tr>");
+        })
+        })
+
+        
+    </script>
+    
+</body>
+
+</html>
