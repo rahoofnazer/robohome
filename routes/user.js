@@ -163,13 +163,14 @@ date_format.second = 'numeric';
     console.log('unique id::::::'+ user.uniqueid)
     console.log('response printng//////////////////////////////////////...................')
     console.log(req.session.user)
-
-  })
-
-
+    
     user_helpers.UpdateUser(user).then((response)=>{
       console.log(user)
     })
+  })
+
+
+   
 
   res.send({ redirect: '/certificate' })
 

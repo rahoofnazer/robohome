@@ -18,7 +18,9 @@ const generatePdf = async (req, res, next) => {
             console.log('response is');
             console.log(response);
             updateduser= response
-            console.log(updateduser)
+            console.log("updateduser.user---------------- : ")
+
+            console.log(updateduser.user)
           })
 
          const document = {
@@ -26,7 +28,7 @@ const generatePdf = async (req, res, next) => {
             data: {
                 user:  updateduser.user
             },
-         
+        
             path: './docs/' + filename
         }
         
@@ -36,8 +38,8 @@ const generatePdf = async (req, res, next) => {
             }).catch(error => {
                 console.log(error);
             });
-            // const filepath = 'http://localhost:3000/docs/' + filename;
-            const filepath = 'http://18.117.84.224:3000/docs/' + filename;
+            const filepath = 'http://localhost:3000/docs/' + filename;
+            // const filepath = 'http://18.117.84.224:3000/docs/' + filename;
 
                 res.render('download', {
                     path: filepath

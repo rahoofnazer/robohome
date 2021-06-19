@@ -9,7 +9,7 @@ const session = require('express-session');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.redirect('/assessment-test');
+  res.redirect  ('/assessment-test');
 });
 
 
