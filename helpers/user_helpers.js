@@ -53,20 +53,29 @@ module.exports = {
     },
 
     getUser: (userData) => {
-        return new Promise(async (resolve, reject) => {
+        if(userData){
 
-            console.log("userdata printed")
-            console.log(userData)
-            let response = {}
-            let user = await db.get().collection(collection.USER_COLLECTION).findOne({_id:objectId(userData._id)})
 
-            if (user) {
-                console.log(user)
-                response.user = user
-                
-                resolve(response)
-            } 
-        })
+            return new Promise(async (resolve, reject) => {
+
+                console.log("userdata printed")
+                console.log(userData)
+                let response = {}
+                let user = await db.get().collection(collection.USER_COLLECTION).findOne({_id:objectId(userData._id)})
+    
+                if (user) {
+                    console.log(user)
+                    response.user = user
+                    
+                    resolve(response)
+                } 
+            })
+
+
+        }else{
+            console.log("no userdata")
+        }
+        
     }
 
 }
