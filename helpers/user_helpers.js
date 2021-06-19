@@ -17,7 +17,7 @@ module.exports = {
                 resolve(data.ops[0])
 
             })
-        })
+        })  
     },
 
     UpdateUser: (userData) => {
@@ -65,7 +65,7 @@ module.exports = {
     
                 if (user) {
                     console.log(user)
-                    response.user = user
+                    response = user
                     
                     resolve(response)
                 } 

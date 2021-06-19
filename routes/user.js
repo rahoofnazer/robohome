@@ -58,7 +58,7 @@ router.post('/qstx', function (req, res) {
   
 
   let now_local = new Date();
-let now_utc = new Date();
+  let now_utc = new Date();
 
 now_utc.setMinutes(now_utc.getMinutes() + now_utc.getTimezoneOffset())
 
@@ -163,7 +163,7 @@ date_format.second = 'numeric';
     console.log('unique id::::::'+ user.uniqueid)
     console.log('response printng//////////////////////////////////////...................')
     console.log(req.session.user)
-    
+
     user_helpers.UpdateUser(user).then((response)=>{
       console.log(user)
     })
@@ -295,7 +295,7 @@ date_format.second = 'numeric';
     console.log(req.session.user)
 
     user_helpers.UpdateUser(user).then((response)=>{
-      console.log(user)
+      console.log(response)
     })
   })
 
