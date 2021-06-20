@@ -41,9 +41,9 @@ const generatePdf = async (req, res, next) => {
             }).catch(error => {
                 console.log(error);
             });
-            // const filepath = 'http://localhost:3000/docs/' + filename;
-            const filepath = 'https://robohome.co.in/docs/' + filename;
-
+            const filepath = 'http://localhost:3000/docs/' + filename;
+            // const filepath = 'https://robohome.co.in/docs/' + filename;
+            
                 res.render('download', {
                     path: filepath
                
