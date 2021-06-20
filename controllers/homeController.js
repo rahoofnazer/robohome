@@ -42,7 +42,7 @@ const generatePdf = async (req, res, next) => {
                 console.log(error);
             });
             // const filepath = 'http://localhost:3000/docs/' + filename;
-            const filepath = 'http://3.14.85.68:3000/docs/' + filename;
+            const filepath = 'https://robohome.co.in/docs/' + filename;
 
                 res.render('download', {
                     path: filepath
