@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Robohome | ore equipe robotic research institute</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <span itemprop="description" style="display:none">Professional trainers of "ROBO HOME" teach technology with one on one interactive method. Our practical oriented classes that we take for students from all age groups.
+  </span>
+  <link rel="icon" href="images/ore/logo/favicon-16x16.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="images/ore/logo/favicon-32x32.png" type="image/gif" sizes="32x32">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />    <meta name="ore-equipe" />    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Document title -->
+<!-- Stylesheets & Fonts -->
+<link href="css/plugins.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="my-auto" >  
+
+
+    <form class="col-lg-5 " style="margin: auto; top: 30PX;" id="knowmore">
+      <div class="col-lg-12 ">
+        <div class="row">
+          <div class="col-lg-5 col-8     pl-0 mb-2">
+          <a href="/"><img src="images/ore/rh2.png" alt="robohome" class="img-fluid"></a>
+            
+          </div>
+          <div class="col-lg-12 col-12 pl-0 mb-5 pr-0">
+            <span class="badge badge-danger col-lg-12" style="background-color: #3d0461; ">
+              <h4 class="pl-0" style="color: white;">KNOW MORE ABOUT COURSES</h4>
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="form-group">
+        <input class="form-control" id="Student" name="Student"  placeholder="Student Name" type="text" required>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" id="Parent" name="Parent" type="text" placeholder="Parent Name" required>
+  </div>
+
+  <div class="form-group">
+    <input class="form-control" id="Phone" name="Phone" placeholder="Phone" type="text" required>
+</div>
+
+<div class="form-group">
+  <input class="form-control" id="Email" name="Email" placeholder="Email" type="email">
+</div>
+
+
+<textarea class="form-control" id="message" name="message" rows="3" placeholder="Your message here.." spellcheck="false">
+Your message here..
+</textarea>
+
+<small>By clicking on Submit, you acknowledge that you accept our <a href="privacypolicy">Privacy policy</a> & <a href="termsandconditions">Terms and conditions</a>.
+</small>
+
+
+    <button type="submit" class="btn btn-outline btn-light btn-rounded mt-3 col-lg-6" 
+    style="border-color: #3d0461; color: #3d0461;" >SUBMIT</button>
+</form>
+
+</div>
+</div>
+<script>
+  $("#knowmore").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbxFAVExzmnwMhYh9HCmkHoypa5_vMJJFLnd2WL-4Q-v7m3c75P9hmT6UqazA0PwE8vsdw/exec",
+          data:$("#knowmore").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Thank you. We'll get back to you very soon!")
+              window.location.reload()
+              window.location.href="http://robohome.co.in"
+          },
+          error:function (err){
+              alert("Sorry, Some error happend, please try again or mail us at talk@oreequipe.com")
+
+          }
+      })
+  })
+</script>
+</body>
+</html>
