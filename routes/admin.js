@@ -18,23 +18,23 @@ router.get('/', function(req, res, next) {
 router.post('/login', function(req, res, next) {
 
 
-// admin_helper.doSignup(req.body).then((response)=>{
-//   console.log(response)
-//   res.redirect('/admin/viewProducts')
-//   })
+admin_helper.doSignup(req.body).then((response)=>{
+  console.log(response)
+  res.redirect('/admin/dashboard')
+  })
 
   console.log(req.body)
-  admin_helper.doLogin(req.body).then((response)=>{
+  // admin_helper.doLogin(req.body).then((response)=>{
     
-    if(response.status){
-      req.session.admin=true
-      req.session.admin=response.admin
-      res.redirect('/admin/dashboard')
-    }else{
-      req.session.adminLoginErr=true
-      res.redirect('/admin')
-    }    
-  })
+  //   if(response.status){
+  //     req.session.admin=true
+  //     req.session.admin=response.admin
+  //     res.redirect('/admin/dashboard')
+  //   }else{
+  //     req.session.adminLoginErr=true
+  //     res.redirect('/admin')
+  //   }    
+  // })
 
 });
 
