@@ -8,6 +8,12 @@ var router = express.Router();
 const session = require('express-session');
 
 /* GET home page. */
+
+router.get('/downloadb', function(req, res, next) {
+  res.render('download');
+});
+
+
 router.get('/', function(req, res, next) {
   res.render('index');
 });
