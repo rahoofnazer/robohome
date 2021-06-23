@@ -11,16 +11,15 @@ const generatePdf = async (req, res, next) => {
     
        if (req.session.user){
         const html = fs.readFileSync(path.join(__dirname, '../views/user/template.html'), 'utf-8');
-        const filename = 'robohome_certificate_' + Math.random() + '.pdf';
+        const filename = Math.random() + '.pdf';
         const user = req.session.user
         var updateduser = {}
         await user_helpers.getUser(user).then((response)=>{
-            console.log('response is');
-            console.log(response);
+            // console.log('response is');
             updateduser = response
-            console.log("updateduser.user---------------- : ")
+            // console.log("updateduser.user---------------- : ")
 
-            console.log(updateduser)
+            // console.log(updateduser)
           })
 
          const document = {
@@ -37,7 +36,7 @@ const generatePdf = async (req, res, next) => {
      
         pdf.create(document, options)
             .then(res => {
-                console.log(res);
+                // console.log(res);
             }).catch(error => {
                 console.log(error);
             });

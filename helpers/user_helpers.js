@@ -21,7 +21,7 @@ module.exports = {
     },
 
     UpdateUser: (userData) => {
-
+        console.log(user)
 
         let response = {}
         return new Promise((resolve, reject) => {
@@ -33,7 +33,6 @@ module.exports = {
                         date: userData.date,
                         datetime: userData.datetime,
                         uniqueid: userData.uniqueid,
-                        indexno: userData.index
 
                     }
                 }).then((response) => {
